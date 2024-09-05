@@ -38,15 +38,33 @@ const App = () => {
       <main>
         <h2>Acceleration</h2>
         <ul>
-          <li>X: {motionEvent?.acceleration?.x ?? 0}</li>
-          <li>Y: {motionEvent?.acceleration?.y ?? 0}</li>
-          <li>Z: {motionEvent?.acceleration?.z ?? 0}</li>
+          <li>
+            X: {motionEvent?.acceleration?.x! >= 0 && " "}
+            {motionEvent?.acceleration?.x?.toFixed(2) ?? "0.00"}
+          </li>
+          <li>
+            Y: {motionEvent?.acceleration?.y! >= 0 && " "}
+            {motionEvent?.acceleration?.y?.toFixed(2) ?? "0.00"}
+          </li>
+          <li>
+            Z: {motionEvent?.acceleration?.z! >= 0 && " "}
+            {motionEvent?.acceleration?.z?.toFixed(2) ?? "0.00"}
+          </li>
         </ul>
         <h2>Acceleration Including Gravity</h2>
         <ul>
-          <li>X: {motionEvent?.accelerationIncludingGravity?.x ?? 0}</li>
-          <li>Y: {motionEvent?.accelerationIncludingGravity?.y ?? 0}</li>
-          <li>Z: {motionEvent?.accelerationIncludingGravity?.z ?? 0}</li>
+          <li>
+            X: {motionEvent?.accelerationIncludingGravity?.x! >= 0 && " "}
+            {motionEvent?.accelerationIncludingGravity?.x?.toFixed(2) ?? "0.00"}
+          </li>
+          <li>
+            Y: {motionEvent?.accelerationIncludingGravity?.y! >= 0 && " "}
+            {motionEvent?.accelerationIncludingGravity?.y?.toFixed(2) ?? "0.00"}
+          </li>
+          <li>
+            Z: {motionEvent?.accelerationIncludingGravity?.z! >= 0 && " "}
+            {motionEvent?.accelerationIncludingGravity?.z?.toFixed(2) ?? "0.00"}
+          </li>
         </ul>
       </main>
     </div>
