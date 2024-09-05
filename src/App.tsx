@@ -80,7 +80,7 @@ const App = () => {
 
         {manualEvent && (
           <div>
-            <h2>Event Listener Data</h2>
+            <h2>Manual Event Trigger</h2>
             <h3>Acceleration</h3>
             <ul>
               <li>
